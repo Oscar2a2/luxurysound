@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Sound</title>
+    <link rel="icon" href="Imagenes/logo3.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Menú de navegación fijo -->
+    <nav>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="Imagenes/logo3.png" alt="Logo Vapor Emporium" class="logo-img">
+                <div class="logo-text">
+                    <span>Luxury Sound</span>
+                    <p class="slogan">Siente el sonido, disfruta el lujo</p>
+                </div>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de inicio -->
+    <section id="inicio" class="inicio">
+        <h1>Bienvenid@s a Luxury Sound</h1>
+        <p>Siente el sonido, disfruta el lujo</p>
+        <a href="#catalogo" class="btn-principal">Ver Catálogo</a>
+    </section>
+
+    <!-- Sección de catálogo de productos -->
+    <section id="catalogo" class="catalogo">
+        <h2>Catálogo de Productos</h2>
+    
+        <!-- Botones de filtro -->
+        <div class="filtro-productos">
+            <button onclick="filtrarProductos('todos')" class="filtro-boton activo">Todos</button>
+            <button onclick="filtrarProductos('airpods')" class="filtro-boton">AirPods</button>
+            <button onclick="filtrarProductos('vapes')" class="filtro-boton">Cargadores</button>
+        </div>
+    
+        <!-- Contenedor de productos -->
+        <div class="productos">
+            <!-- Productos de AirPods -->
+            <div class="producto-card airpods">
+                <img src="Imagenes/airpods1.png" alt="AirPod 1">
+                <h3>AirPods 4ta Gen ANC</h3>
+                <p class="precio">$800</p>
+                <button class="btn-descripcion" onclick="toggleDescripcion(this)">Ver Descripción</button>
+                <div class="descripcion-oculta">
+                    <p>- Sensores de Touch para subir y bajar volumen</p><br>
+                    <p>- Bocina y Sonido espectacular</p><br>
+                    <p>- Ya no tiene botón, se vincula por medio de touch</p><br>
+                    <p>- Disponible la ubicación</p><br>
+                    <p>- Calidad premium</p><br>
+                    <p>- Garantía de 3 meses</p><br>
+                    <p>- No incluye cable de carga</p><br>
+                    <p>- Con certificación NOM</p>
+                </div>
+            </div>
+    
+            <!-- Productos de Cargadores -->
+            <div class="producto-card vapes">
+                <img src="Imagenes/cargador1.jpg" alt="Vape 1">
+                <h3>Cargador de 20W</h3>
+                <p class="precio">$200</p>
+                <button class="btn-descripcion" onclick="toggleDescripcion(this)">Ver Descripción</button>
+                <div class="descripcion-oculta">
+                    <p>- Carga rapida de 20W</p><br>
+                    <p>- Entrada C-lightning</p><br>
+                    <p>- Calidad premium</p><br>
+                    <p>- Garantía de 3 meses</p><br>
+                    <p>- Con certificación NOM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <p>Para más información sobre nuestros productos, contáctanos a través de nuestras redes sociales o envíanos un mensaje.</p>
+        <div class="redes-sociales">
+            <a href="https://wa.me/qr/GM64DHYBPP4YH1" class="social-icon" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            <a href="https://www.instagram.com/luxurysound.ls/" class="social-icon" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Luxury Sound | La mejor tienda de AirPods y productos Apple en línea</p>
+    </footer>
+
+    <!-- Script para mostrar/ocultar descripciones -->
+    <script src="script.js"></script>
+</body>
+</html>
